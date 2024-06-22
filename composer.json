@@ -1,0 +1,40 @@
+{
+    "name": "bfg/admin-shopify",
+    "description": "A set of tools for an online store",
+    "type": "bfg-admin-extension",
+    "keywords": ["laravel", "bfg", "lte", "admin", "extension", "admin-shopify"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Xsaven",
+            "email": "gms.sw.xsaven@gmail.com"
+        }
+    ],
+    "prefer-stable": true,
+    "require": {
+        "php": "^8.0|^8.1",
+        "bfg/admin": "^6.0.0",
+        "bfg/admin-seo": "dev-master|^0.1.0",
+        "bfg/admin-address": "dev-master|^0.1.0",
+        "bfg/admin-users": "dev-master|^0.1.0",
+        "bfg/admin-favorite": "dev-master|^0.1.0",
+        "spatie/laravel-translatable": "^6.6",
+        "bfg/repository": "^1.4.0"
+    },
+    "require-dev": {},
+    "autoload": {
+        "psr-4": {
+            "Admin\\Extend\\AdminShopify\\": "src/"
+        },
+        "files": [
+            "src/helpers.php"
+        ]
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Admin\\Extend\\AdminShopify\\ServiceProvider"
+            ]
+        }
+    }
+}
